@@ -50,7 +50,7 @@ def get_batch_responses_from_llm(
                 {"role": "user", "content": system_message},
                 *new_msg_history,
             ],
-            temperature=1,
+            temperature=temperature,
             max_completion_tokens=3000,
             n=n_responses,
             seed=0,

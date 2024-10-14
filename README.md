@@ -181,8 +181,11 @@ cd templates/grokking && python experiment.py --out_dir run_0 && python plot.py
 conda activate ai_scientist
 # Run the paper generation.
 python launch_scientist.py --model "gpt-4o-2024-05-13" --experiment nanoGPT_lite --num-ideas 2
+python launch_scientist.py --model "o1-mini" --experiment nanoGPT_lite --num-ideas 2
 python launch_scientist.py --model "claude-3-5-sonnet-20240620" --experiment nanoGPT_lite --num-ideas 2
 ```
+
+For rapid experimentation, `gpt-4o-mini` is ideal for quick POCs as it offers faster execution times and lower costs.
 
 If you have more than 1 GPU, use the `parallel` option to parallelize ideas across multiple GPUs.
 
